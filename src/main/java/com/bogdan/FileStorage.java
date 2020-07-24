@@ -28,7 +28,6 @@ public class FileStorage {
         }
     }
 
-
     public List<User> read() {
 
         StringBuilder contentBuilder = new StringBuilder();
