@@ -6,33 +6,34 @@ public class Main {
 
         UserDao user = new UserDao();
 
-        System.out.println("Clear list users: ");
-        user.removeAll();
+        System.out.println("Check the file UserData.txt");
+        System.out.println("File contain: \n" + user.getAllUsers());
 
-        user.addUser(new User(1, "Bob", 22));
-        user.addUser(new User(2, "Viki", 34));
-        user.addUser(new User(3, "Dan", 52));
-        user.addUser(new User(4, "Mia", 24));
-        user.addUser(new User(5, "Alexxxx", 33));
-        user.addUser(new User(6, "Nina", 26));
-        user.addUser(new User(7, "Georg", 19));
-        user.addUser(new User(8, "Vasily", 45));
-        user.addUser(new User(9, "Billy", 31));
-        user.addUser(new User(10, "Ana", 20));
+        System.out.println("Clear list users");
+        user.removeAll();
+        System.out.println("Check the file UserData.txt");
+        System.out.println("File contain: \n" + user.getAllUsers());
+
+        System.out.println("Add new users: ");
+        user.addUser(new User(1, "Jack", 19));
+        user.addUser(new User(2, "Thomazzz", 23));
+        user.addUser(new User(3, "Lily", 22));
+        user.addUser(new User(4, "Emily", 18));
+        user.addUser(new User(5, "Connor", 31));
 
         System.out.println(user.getAllUsers() + "\n===================================");
 
-        System.out.println("Delete user by name Dan and user by id 4 (Mia): ");
-        user.removeUserByName("Dan");
+        System.out.println("Delete user by name Jack and user by id 4 (Emily): ");
+        user.removeUserByName("Jack");
         user.removeUserById(4);
         System.out.println(user.getAllUsers() + "\n===================================");
 
-        System.out.println("Get user by id (5): ");
-        System.out.println(user.getUser(5) + "\n===================================");
+        System.out.println("Get user by id (2): ");
+        System.out.println(user.getUser(2) + "\n===================================");
 
         System.out.println("Change data about user: ");
-        User newUser = new User(5, "Alex", 33);
+        User newUser = new User(2, "Thomas", 19);
         user.updateUser(newUser);
-        System.out.println(user.getUser(5) + "\n===================================");
+        System.out.println(user.getAllUsers() + "\n===================================");
     }
 }

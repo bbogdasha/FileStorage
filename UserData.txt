@@ -1,33 +1,13 @@
 [ {
-  "id" : 1,
-  "name" : "Bob",
-  "age" : 22
-}, {
   "id" : 2,
-  "name" : "Viki",
-  "age" : 34
-}, {
-  "id" : 5,
-  "name" : "Alex",
-  "age" : 33
-}, {
-  "id" : 6,
-  "name" : "Nina",
-  "age" : 26
-}, {
-  "id" : 7,
-  "name" : "Georg",
+  "name" : "Thomas",
   "age" : 19
 }, {
-  "id" : 8,
-  "name" : "Vasily",
-  "age" : 45
+  "id" : 3,
+  "name" : "Lily",
+  "age" : 22
 }, {
-  "id" : 9,
-  "name" : "Billy",
+  "id" : 5,
+  "name" : "Connor",
   "age" : 31
-}, {
-  "id" : 10,
-  "name" : "Ana",
-  "age" : 20
 } ]
