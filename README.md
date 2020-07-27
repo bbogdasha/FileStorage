@@ -4,7 +4,7 @@ The work of the program consists in adding / removing / updating / displaying ob
 
 ### Tech
 
-* Jackson.
+* Jackson;
 * StringBuilder.
 
 ### Result
